@@ -18,21 +18,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
+    <br>
+    <div class="last">
 
+        <p> Amale:</p> <textarea name="text" id="amale"  rows="1"  ></textarea> 
+        <p> Congress:</p> <textarea name="text" id="congress"  rows="1" ></textarea>
+        <p> Mawadi:</p><textarea name="text" id="mawadi"  rows="1" ></textarea>
+        <p> Samajbadi:</p>   <textarea name="text" id="samajbadi"  rows="1" ></textarea>
+        <p> Rastriya Swatantra Party:</p>   <textarea name="text" id="swatantra"  rows="1" ></textarea>
+        <p> Janata Samajbadi Party:</p>   <textarea name="text" id="janata"  rows="1" ></textarea>
+        <p> Prajatantra Party:</p>   <textarea name="text" id="prajatantra"  rows="1" ></textarea>
+      </div>
     <section class="services" id="services">
         <div class="max-width">
-           <center><h2 class="title">Voting App</h2></center> 
+           <center><h2 class="title">Voting Poll</h2></center> 
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <button id="submit" onclick="Submit1()"> <img src="amale.png" width="100px" height="100px"></button>
+                        <button id="submit" onclick="increment()"> <img src="amale.png" width="100px" height="100px"></button>
                         <div class="text">नेकपा एमाले</div>
-                        
+                      
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <button id="submit-2" onclick="Submit2()"> <img src="congress.jpg" width="100px" height="100px"></button>
+                        <button id="submit-2" onclick="increment1()"> <img src="congress.jpg" width="100px" height="100px"></button>
                         <div class="text">नेपाली कांग्रेस
                         </div>
                         
@@ -40,7 +50,7 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <button id="submit-3" onclick="Submit3()">    <img src="mawadi.png" width="100px" height="100px"> </button>
+                        <button id="submit-3" onclick="increment2()">    <img src="mawadi.png" width="100px" height="100px"> </button>
                         <div class="text">नेकपा माओबादी केन्द्र
                         </div>
                    
@@ -48,7 +58,7 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <button id="submit-4" onclick="Submit4()">  <img src="samajwadi.png" width="100px" height="100px">   </button>
+                        <button id="submit-4" onclick="increment3()">  <img src="samajwadi.png" width="100px" height="100px">   </button>
                         <div class="text">नेकपा समाजवादी पार्टी
                         </div>
                      
@@ -56,7 +66,7 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <button id="submit-5" onclick="Submit5()"> <img src="swatantra.png" width="100px" height="100px"></button>
+                        <button id="submit-5" onclick="increment4()"> <img src="swatantra.png" width="100px" height="100px"></button>
                         <div class="text">राष्ट्रिय स्वतन्त्र पार्टी
                         </div>
                         
@@ -66,25 +76,66 @@
 
                 <div class="card">
                     <div class="box">
-                        <button id="submit-5" onclick="Submit6()"> <img src="janata.jpg" width="100px" height="100px"></button>
+                        <button id="submit-5" onclick="increment5()"> <img src="janata.jpg" width="100px" height="100px"></button>
                         <div class="text">जनता समाजवादी पार्टी
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <button id="submit-5" onclick="Submit7()"> <img src="rastriya.png" width="100px" height="100px"></button>
+                        <button id="submit-5" onclick="increment6()"> <img src="rastriya.png" width="100px" height="100px"></button>
                         <div class="text"> राष्ट्रिय प्रजातन्त्र पार्टी
 
                         </div>
                     </div>
                 </div>
 
+             
+     
                </div>
             </div>
         </div>
     </section>
+<script>
 
+    var count = 0
+     function increment(){
+        count = count + 1
+        document.getElementById("amale").placeholder = count;
+      
+
+     }
+     var count1 = 0
+     function increment1(){
+        count1 = count1 + 1
+     document.getElementById("congress").placeholder = count1; 
+      }
+      var count2 = 0
+     function increment2(){
+        count2 = count2 + 1
+     document.getElementById("mawadi").placeholder = count2; 
+      }
+      var count3 = 0
+     function increment3(){
+        count3 = count3 + 1
+     document.getElementById("samajbadi").placeholder = count3; 
+      }
+      var count4 = 0
+     function increment4(){
+        count4 = count4 + 1
+     document.getElementById("swatantra").placeholder = count4; 
+      }
+      var count5 = 0
+     function increment5(){
+        count5 = count5 + 1
+     document.getElementById("janata").placeholder = count5; 
+      }
+      var count6 = 0
+     function increment6(){
+        count6 = count6 + 1
+     document.getElementById("prajatantra").placeholder = count6; 
+      }
+</script>
    <script src="firebase.js"></script>
    <script src="main.js">   </script>
 
