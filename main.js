@@ -1,6 +1,7 @@
 
 function Submit1(){
   console.log('Amale')
+  location.assign('second.html')
 }
 function Submit2(){
   console.log('Congress')
